@@ -4,7 +4,7 @@ enter_age = int(input("Enter Age: "))
 enter_gender = input("Enter Gender (Male / Female:) ")
 enter_weight =  float(input("Enter Weight (kg): "))
 enter_height = float(input("Enter height (m): "))
-bmi_calculator = (enter_weight/enter_height)
+bmi_calculator = (enter_weight/enter_height * enter_height)
 
 print ("Hello!", enter_name)
 print ("Your admin no. is,", enter_admin_no, "and age is", enter_age)
