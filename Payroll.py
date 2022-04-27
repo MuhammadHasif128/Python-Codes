@@ -13,6 +13,13 @@ hrRate = float(input ("Hourly rate : "))
 mthlySalary = (totalWkh * hrRate)
 print ("Monthly Salary For This Month is $", mthlySalary)"""
 
+# OR
+
+"""totalWkh = float(input ("Total Working Hours : "))
+hrRate = float(input ("Hourly rate : "))
+# mthlySalary = (totalWkh * hrRate)
+print ("Monthly Salary For This Month is $", totalWkh * hrRate)"""
+
 
 
 
