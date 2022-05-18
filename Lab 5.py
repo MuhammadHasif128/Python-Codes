@@ -1,4 +1,5 @@
 grade = (input("Enter Grade: "))
+grade = grade.upper()
 
 if grade == "A":
     print("Your GPA is", 4.0)
