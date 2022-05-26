@@ -32,7 +32,11 @@ while loop (condition loop)"""
 #while loop, so long its true run, false, end loop, wht is true that w make it keep going
 #while loop need specify range and add manually, intial value too. change value.
 
-i = 5
-while i > 0:
-    print(i)
-    i = i - 1
+num = int(input("Enter Number to calculate sum: "))
+sum = 0
+for i in range(0, num+1, 1):
+    new_sum = sum+i
+print("sum of first ", num, "numbers is: ", sum)
+
+
+
