@@ -4,9 +4,10 @@ while cost_price > 0:
     x = cost_price + selling_price
     print(x)
     cost_price = int(input("Please Input Your Cost Price: "))
-if cost_price == 0 or cost_price < 0:
+while cost_price == 0 or cost_price < 0:
     print("error")
-print("Calculation stopped. Goodbye :D")
+    break
+print("Goodbye :D")
 
 
 
