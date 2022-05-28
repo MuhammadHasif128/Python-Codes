@@ -1,25 +1,18 @@
-"""there are three tests and one exam contributing to the final marks.
- Each test contributes a different percentage and the three tests sum up to 50% of the final marks.
- The exam contributes 50% of the final marks.
- You are tasked to write a program to calculate the final marks of the students, based on the
-inputs as follow on the sample screen.
-the 50% for tests divide by yourself"""
+test1 = float(input("What is your score for Test 1: "))
+percentage1 = float(input("What is your percentage for Test 1: "))
+total_percentaged_score1 = (test1 * percentage1)/100
+test2 = float(input("What is your score for Test 2: "))
+percentage2 = float(input("What is your percentage for Test 2: "))
+total_percentaged_score2 = (test2 * percentage2)/100
+test3 = float(input("What is your score for Test 3: "))
+percentage3 = float(input("What is your percentage for Test 3: "))
+total_percentaged_score3 = (test3 * percentage3)/100
+exam = float(input("What is your score for exam: "))
+exam_percentage = exam * (50/100)
 
-score1 = int(input("What is your score for Test 1:"))
-percentage1 = int(input("What is percentage for Test 1:"))
-score2 = int(input("What is your score for Test 2:"))
-percentage2 = int(input("What is percentage for Test 2:"))
-score3 = int(input("What is your score for Test 3:"))
-percentage3 = int(input("What is percentage for Test 3:"))
-exam = int(input("What is your score for Exam: "))
+total_marks = total_percentaged_score1 + total_percentaged_score2 + total_percentaged_score3 + exam_percentage
 
-Final_Mark = (score1/100)*percentage1 + (score2/100)*percentage2 + (score3/100)*percentage3 + (exam/2)
-
-print ("Your Final Marks is:", Final_Mark)
-
-
-
-
+print("Your final mark is", total_marks)
 
 
 
