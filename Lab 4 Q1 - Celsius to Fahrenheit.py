@@ -17,6 +17,9 @@ while True:
 #except ValueError as a:
 #print("Error")
 
+#a)runtime error, input validation text
+#b)while loop&for loop
+
 
 
 

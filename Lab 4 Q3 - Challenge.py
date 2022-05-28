@@ -1,9 +1,10 @@
-s=int(input("enter a value: ")) #seconds
-h=s//3600 #hours
-m=(s-(h*3600))//60
-seconds=(s-(h*3600)-(m*60))
-print(s, "seconds is", h, "hours", m, "minutes and", seconds, "seconds")
+print("I will convert your values in SECONDS to hours, minutes, seconds")
 
-#a)runtime error, input validation text
-#b)while loop&for loop
+value = int(input("Enter value: "))
+
+hours = value//3600
+minutes = (value//60)-(hours*60)
+seconds = value - (hours*3600) - (minutes*60)
+
+print(value, "seconds is", hours,"hours", minutes,"minutes and", seconds,"seconds.")
 
