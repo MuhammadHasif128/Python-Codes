@@ -1,33 +1,16 @@
-age = int(input("Please Enter Your Age: "))
-print("Monday is 1 to Sunday is 7")
+age = int(input("Please input your age: "))
+day = range(1, 8)
 
-while True:
-    if age > 130:
-        print("Too old. Invalid Age")
-        break
-    if age > 4 and age <= 130:
-        day = int(input("enter the day of the week: "))
-    if day >= 6 and day <= 7:
-        print("Pay $10")
-        break
-    elif day in range(1, 6):
+if 4 < age <= 130:
+    day = int(input("Please enter the day of the week: "))
+    if day in range(1, 6):
         if age < 16:
-            print("You have to pay $7.50")
-            break
-        elif age >= 16 and age < 65:
-            print("You have to pay $10")
-            break
+            print("You have to pay $7.00 for the ticket.")
+        elif 16 < age < 65:
+            print("You have to pay $10.00 for the ticket.")
         else:
-            print("You have to pay $5.50")
-            break
-
+            print("You have to pay $5.50 for the ticket.")
+    else:
+        print("You have to pay $10 for the ticket")
 else:
-    print("Have a nice day")
-
-
-
-
-
-
-
-
+    print("Error")
