@@ -1,11 +1,10 @@
-price = float(input("Please Enter the Price of your Item:$ "))
-rounded_gst = round(price*(7/100), 2)
-total_price = price+rounded_gst
-print("Subtotal:$ ", price)
-print("GST:$ ", rounded_gst)
-print("Total Amount:$ ", total_price)
+unitprice = float(input("Enter Your Unit Price: "))
+copies = float(input("Enter number of copies: "))
+total = unitprice * copies
+gst = total * (7/100)
+total_amount = total + gst
 
-#x = 3.13433#
-#print(round(x,2))#
-
+print(f"Subtotal:($){total:.2f}")
+print(f"GST:($){gst:.2f}")
+print(f"Total Amount:($){total_amount:.2f}")
 
