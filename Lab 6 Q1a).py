@@ -34,7 +34,7 @@ while loop (condition loop)"""
 
 num = int(input("Enter Number to calculate sum: "))
 sum = 0
-for i in range(0, num+1, 1):
+for i in range(1, num+1, 1):
     new_sum = sum+i
 print("sum of first ", num, "numbers is: ", sum)
 
