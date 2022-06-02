@@ -1,10 +1,12 @@
-print("just click any number more than one plsss :(")
-forgive_hasif = int(input("Will you forgive Hasif?: "))
+total = 0
+num = int(input("Please Enter A Number: "))
 
-if forgive_hasif > 1:
-    print("Of course :)")
+for i in range(1, num+1, 1):
+    total += i
+    print (i, "+")
+print("New Sum Is", num, "numbers is:", total)
 
-
+#ask how to make loop statements vertical, horizontal like how the question wants it to be
 
 
 
