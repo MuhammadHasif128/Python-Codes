@@ -32,11 +32,18 @@ while loop (condition loop)"""
 #while loop, so long its true run, false, end loop, wht is true that w make it keep going
 #while loop need specify range and add manually, intial value too. change value.
 
-num = int(input("Enter Number to calculate sum: "))
-sum = 0
+total = 0
+num = int(input("Please Enter A Number: "))
+
 for i in range(1, num+1, 1):
-    new_sum = sum+i
-print("sum of first ", num, "numbers is: ", sum)
+    total += i
+    print (i, "+", end="")
+print("New Sum Is", num, "numbers is:", total)
+
+#ask how to make loop statements vertical, horizontal like how the question wants it to be
+
+
+
 
 
 
