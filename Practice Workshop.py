@@ -1,8 +1,35 @@
-print("Welcome to python star gazing.")
+print("Welcome to python buffet catering.")
 
-stars = int(input("Enter numbers of stars to see: "))
+exception = input("Is buffet held on a weekend (Y/N): ")
 
-for i in range(1, stars+1):
+if exception == str("n"):
+    size = int(input("Enter size of the buffet (ppl): "))
+    if size < 100:
+        price = 10
+        total_price = float(price*size)
+        print("Your buffet for", size, f"people cost $ {total_price:.2f}")
+    elif size <=200:
+        price = 8.5
+        total_price = float(price*size)
+        print("Your buffet for", size, f"people cost $ {total_price:.2f}")
+    else:
+        price = 7
+        total_price = float(price*size)
+        print("Your buffet for", size, f"people cost $ {total_price:.2f}")
 
-    print("*", end=" ")
+if exception == str("y"):
+    size = int(input("Enter size of the buffet (ppl): "))
+    if size < 100:
+        price = 10
+        total_price = float(price*size) * (115/100)
+        print("Your buffet for", size, f"people cost $ {total_price:.2f}")
+    elif size <=200:
+        price = 8.5
+        total_price = float(price*size) * (115/100)
+        print("Your buffet for", size, f"people cost $ {total_price:.2f}")
+    else:
+        price = 7
+        total_price = float(price*size) * (115/100)
+        print("Your buffet for", size, f"people cost $ {total_price:.2f}")
+
 
