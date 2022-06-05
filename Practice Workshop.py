@@ -1,10 +1,8 @@
-print("Welcome to python delivery calculator.")
-trips = int(input("Enter the number of delivery trip you had made today: "))
-total = 0
+print("Welcome to python star gazing.")
 
+stars = int(input("Enter numbers of stars to see: "))
 
-for i in range(1, trips+1):
-    per_trip = int(input("Enter the earnings made for trip" + str(i) + ":"))
-    total = total + per_trip
-    average = total/trips
-print("You have made", trips, "and earned a total of $", total, "with average earning per trip of $", average)
+for i in range(1, stars+1):
+
+    print("*", end=" ")
+
