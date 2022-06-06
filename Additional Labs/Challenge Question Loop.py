@@ -20,3 +20,18 @@ for s in range(1, studentNO+1):
 # end = "" horizontal
 # by default print vertical line
 # put name before u do ur python questions
+
+
+students = int(input("How many students do you have? "))
+tests = int(input("How many test for your module? "))
+
+
+for s in range(1, students+1):
+    print("\n******* Student", s, "*******")
+    average_score = 0
+    total = 0
+    for t in range(1, tests+1):
+        no_of_tests = int(input("Test Number" + str(t) + ": "))
+        total = no_of_tests + total
+        average_score = total/tests
+    print("The Average For Student", s, "is:", average_score)
