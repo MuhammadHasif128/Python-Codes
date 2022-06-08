@@ -20,7 +20,7 @@ while order == 0 or order == 1:
     break
 print("Total price now is $", total)
 exception = input("Do you have more orders (Y/N)?: ")
-if exception == str("y"):
+if exception.upper() == str("Y"):
    order = int(input("Please enter your order: "))
    while order == 0 or order == 1:
     if order == 0:
@@ -34,6 +34,6 @@ if exception == str("y"):
             price = float(input("Enter price for drink" + str(i) + ":"))
             total += price
     break
-elif exception == str("n"):
+elif exception.upper() == str("N"):
     print("Bye")
 print("Thank you. Please Pay", total)
