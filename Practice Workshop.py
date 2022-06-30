@@ -22,13 +22,17 @@ import re
     #else:
         #print(inputt + "ing") q4)
 
-sentence = "wheel of fortune"
-p = re.compile('\w')
-hidden_sentence = p.sub('-', sentence)
-print('Guess the phrase :', hidden_sentence)
-# while loop to keep asking for the letter and print out the phrase
-while True:
-    letter = input("Give Me A Letter")
+#sentence = "wheel of fortune"
+#p = re.compile('\w')
+#hidden_sentence = p.sub('-', sentence)
+#print('Guess the phrase :', hidden_sentence)
+#while loop to keep asking for the letter and print out the phrase
+#while True:
+    #letter = input("Give Me A Letter")
+
+s="EsmondD"
+
+print(s[-6:-1:3])
 
 
 
