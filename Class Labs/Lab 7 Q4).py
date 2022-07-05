@@ -1,13 +1,12 @@
-"""s = input("Enter a string: ")
-new_s = ' '
-if len(s) >= 5:
-    if s[-3] == "ing":
-        s = s + "ly"
-    else:
-        new_s = s + "ing"
-    print(new_s)
-else:
-    print("The string is <5 characters long.")"""
+"""word = input("Enter a string: ")
+count = 0
+for index in word:
+    count += 1
+if count >= 5:
+        if word.endswith("ing"):
+            print(word + "ly")
+        else:
+            print(word + "ing")"""
 
 inputt = input("Please Enter A String: ")
 if len(inputt)>= 5:
