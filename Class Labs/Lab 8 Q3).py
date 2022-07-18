@@ -1,11 +1,13 @@
-a = {"Jane": 75, "John": 60, "Jerome": 81 }
+scores = {
+    'Jane': 75,
+    'John': 60,
+    'Jerome': 81,
+}
 
-for key, value in a.items():
-    print(key, value)
+input_name = input("Enter a student name: ")
 
-print("============")
-
-name = input("Enter student name: ")
-
-if name in a:
-    print(a[name])
+if input_name in scores:
+    attempt = scores[input_name]
+    print("Results for English: " + str(attempt))
+else:
+    print("There is no result for " + input_name)
